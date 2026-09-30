@@ -1,0 +1,24 @@
+name: Documentation fix
+description: A wrong fact, an outdated step, a broken link or something unclear in the docs.
+title: "Docs: "
+labels: ["documentation"]
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: Link to the page (and the section, if you can).
+      placeholder: "https://github.com/ATR-Lab/<repo>/blob/<branch>/<path>.md#<section>"
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What's wrong or unclear?
+    validations:
+      required: true
+  - type: textarea
+    id: fix
+    attributes:
+      label: Suggested fix and source
+      description: The correct text or step, and where it comes from (an official doc, a vendor page, the lab). Facts about the lab need a source.

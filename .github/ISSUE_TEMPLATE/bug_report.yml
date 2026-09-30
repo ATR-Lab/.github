@@ -1,0 +1,55 @@
+name: Bug report
+description: Something in this repository doesn't work as documented.
+title: "Bug: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting. This issue is public: don't paste passwords, API keys, robot Wi-Fi credentials or data that identifies a study participant.
+        For a security vulnerability, don't open an issue; follow the repository's security policy instead.
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What you did, what you expected and what happened instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Exact commands, launch files or clicks, in order.
+      placeholder: |
+        1. ros2 launch ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs and error messages
+      description: Paste the full output. It is formatted as code automatically.
+      render: shell
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: OS and version, ROS 2 distribution, language or tool versions, and the branch or commit.
+      placeholder: "Ubuntu 24.04, ROS 2 Jazzy, commit abc1234"
+    validations:
+      required: true
+  - type: dropdown
+    id: hardware
+    attributes:
+      label: Does this involve a robot or other hardware?
+      options:
+        - "No, software only"
+        - "Yes (name the robot, firmware and how it was controlled below)"
+    validations:
+      required: true
+  - type: textarea
+    id: hardware-details
+    attributes:
+      label: Hardware details
+      description: Robot or device, firmware or software version, and whether it was teleoperated, autonomous or scripted.
