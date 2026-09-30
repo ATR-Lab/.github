@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Advanced Telerobotics Research Lab website
+    url: https://www.atr.cs.kent.edu/
+    about: Questions about joining or working with the lab.
+  - name: Getting started at the lab
+    url: https://github.com/ATR-Lab/getting-started-atr-lab
+    about: Lab rules, safety, research standards, tools and hardware for lab members.
