@@ -67,7 +67,7 @@ Check visibility before linking any other repository:
 ## Writing rules
 
 - Kent State style: sentence-case headings, no Oxford comma, "and" not "&", dates like "Sept. 30, 2026", no emoji.
-- The lab's name: "Advanced Telerobotics Research Lab" on first reference, then "the lab"; "ATR Lab" only in
+- The lab's name: "Advanced Telerobotics Research Laboratory" on first reference, then "the lab"; "ATR Lab" only in
   display text, always with Kent State nearby.
 - "ROS 2", never "ROS2", in prose. Cut hype words (cutting-edge, state-of-the-art, innovative, leverage, robust).
 - Default community files apply to about 100 repositories: keep them general, short and free of lab-only

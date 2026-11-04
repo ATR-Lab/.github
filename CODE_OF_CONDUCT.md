@@ -3,7 +3,7 @@
 > **Read this when** you take part in any ATR-Lab repository: issues, pull requests, reviews, discussions or
 > comments. A repository with its own `CODE_OF_CONDUCT.md` overrides this page.
 
-The Advanced Telerobotics Research Lab at Kent State University builds robots that help people rather than
+The Advanced Telerobotics Research Laboratory at Kent State University builds robots that help people rather than
 replace them, and we want our online spaces to work the same way: people first, work second.
 
 ## What we expect

@@ -1,16 +1,16 @@
 <p align="center">
-  <img src="profile/assets/header.png" alt="Advanced Telerobotics Research Lab, Department of Computer Science, Kent State University." width="100%">
+  <img src="profile/assets/header.png" alt="Advanced Telerobotics Research Laboratory, Department of Computer Science, Kent State University." width="100%">
 </p>
 
 <p align="center">
   <b>The ATR-Lab organization's profile page and the default community files for every lab repository.</b><br>
-  <sub>Advanced Telerobotics Research Lab · Department of Computer Science · Kent State University</sub>
+  <sub>Advanced Telerobotics Research Laboratory · Department of Computer Science · Kent State University</sub>
 </p>
 
 <p align="center">
   <a href="LICENSE"><img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-003976?style=flat-square"></a>
-  <a href="https://www.atr.cs.kent.edu/"><img alt="Advanced Telerobotics Research Lab, Kent State University" src="https://img.shields.io/badge/ATR_Lab-Kent_State-003976?style=flat-square"></a>
-  <img alt="Last reviewed Sept. 2026" src="https://img.shields.io/badge/last_reviewed-Sept._2026-4A5868?style=flat-square">
+  <a href="https://www.atr.cs.kent.edu/"><img alt="Advanced Telerobotics Research Laboratory, Kent State University" src="https://img.shields.io/badge/ATR_Lab-Kent_State-003976?style=flat-square"></a>
+  <img alt="Last reviewed Nov. 2026" src="https://img.shields.io/badge/last_reviewed-Nov._2026-4A5868?style=flat-square">
 </p>
 
 GitHub treats a repository named `.github` specially:
@@ -61,7 +61,7 @@ These live in the organization's settings (**github.com/organizations/ATR-Lab/se
 ## License
 
 Text and code in this repository are released under the [MIT License](LICENSE). The names and logos of the
-Advanced Telerobotics Research Lab and Kent State University are trademarks and are not covered by that license.
+Advanced Telerobotics Research Laboratory and Kent State University are trademarks and are not covered by that license.
 
 ---
 
@@ -72,6 +72,6 @@ Advanced Telerobotics Research Lab and Kent State University are trademarks and 
   <a href="https://github.com/ATR-Lab/dev-guidelines">Dev guidelines</a> ·
   <a href="https://github.com/ATR-Lab/all-things-ros2">All things ROS 2</a> ·
   <a href="https://github.com/ATR-Lab">All repositories</a></sub><br>
-  <sub>Advanced Telerobotics Research Lab · Department of Computer Science · Kent State University ·
+  <sub>Advanced Telerobotics Research Laboratory · Department of Computer Science · Kent State University ·
   <a href="https://www.atr.cs.kent.edu/">www.atr.cs.kent.edu</a></sub>
 </p>

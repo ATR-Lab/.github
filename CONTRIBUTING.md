@@ -1,6 +1,6 @@
 # Contributing to ATR-Lab repositories
 
-> **Read this when** you want to change code or docs in any repository of the Advanced Telerobotics Research Lab
+> **Read this when** you want to change code or docs in any repository of the Advanced Telerobotics Research Laboratory
 > at Kent State University. A repository with its own `CONTRIBUTING.md` overrides this page.
 
 Thank you for helping. Lab members and outside contributors follow the same short process: talk first, change
@@ -41,7 +41,7 @@ one thing per pull request, and leave the repository easier to use than you foun
 ## Licensing of contributions
 
 By contributing, you agree that your contribution is released under the license of the repository you are
-contributing to. The names and logos of the Advanced Telerobotics Research Lab and Kent State University are
+contributing to. The names and logos of the Advanced Telerobotics Research Laboratory and Kent State University are
 trademarks and are not covered by any repository license.
 
 ## Code of conduct

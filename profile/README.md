@@ -1,9 +1,9 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ATR-Lab/.github/main/profile/assets/header.png" alt="Advanced Telerobotics Research Lab, Department of Computer Science, Kent State University: telepresence robotics, tele-embodiment and Physical AI." width="100%">
+  <img src="https://raw.githubusercontent.com/ATR-Lab/.github/main/profile/assets/header.png" alt="Advanced Telerobotics Research Laboratory, Department of Computer Science, Kent State University: telepresence robotics, tele-embodiment and Physical AI." width="100%">
 </p>
 
 <p align="center">
-  <b>The Advanced Telerobotics Research Lab at Kent State University is an innovation research laboratory focused on exploring the frontiers of telepresence robotics, tele-embodiment, autonomy and artificial intelligence.</b>
+  <b>The Advanced Telerobotics Research Laboratory at Kent State University is an innovation research laboratory focused on exploring the frontiers of telepresence robotics, tele-embodiment, autonomy and artificial intelligence.</b>
 </p>
 
 <p align="center">
@@ -11,6 +11,7 @@
   <a href="https://www.youtube.com/@advancedteleroboticsresear8565">YouTube</a> ·
   <a href="https://x.com/atrlab_kent">X @atrlab_kent</a> ·
   <a href="https://www.instagram.com/atr_lab/">Instagram @atr_lab</a> ·
+  <a href="https://www.linkedin.com/company/advanced-telerobotics-research-laboratory">LinkedIn</a> ·
   <a href="https://www.kent.edu/cs">Department of Computer Science</a>
 </p>
 
@@ -85,5 +86,5 @@ We build robots that people operate from a distance and Physical AI (AI that sen
 - **Contributors:** every repository follows the [contributing guide](https://github.com/ATR-Lab/.github/blob/main/CONTRIBUTING.md) and the [code of conduct](https://github.com/ATR-Lab/.github/blob/main/CODE_OF_CONDUCT.md) unless it has its own.
 
 <p align="center">
-  <sub>Advanced Telerobotics Research Lab · Department of Computer Science · Kent State University · Kent, Ohio</sub>
+  <sub>Advanced Telerobotics Research Laboratory · Department of Computer Science · Kent State University · Kent, Ohio</sub>
 </p>
