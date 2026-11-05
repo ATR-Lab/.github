@@ -12,6 +12,7 @@
   <a href="https://x.com/atrlab_kent">X @atrlab_kent</a> ·
   <a href="https://www.instagram.com/atr_lab/">Instagram @atr_lab</a> ·
   <a href="https://www.linkedin.com/company/advanced-telerobotics-research-laboratory">LinkedIn</a> ·
+  <a href="https://discord.gg/NvwsANWEuw">Discord</a> ·
   <a href="https://www.kent.edu/cs">Department of Computer Science</a>
 </p>
 

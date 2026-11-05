@@ -89,7 +89,7 @@ uvx --with pyyaml python -c "import glob, yaml; [yaml.safe_load(open(f)) for f i
 
 | Where | Placeholder | Who can fill it |
 |---|---|---|
-| `CODE_OF_CONDUCT.md` | `[conduct contact email]`, `[conduct contact role]`; the page is a draft until the director approves | Director |
+| `CODE_OF_CONDUCT.md` | Approval of the page (reports go to the director, Nov. 5, 2026) | Director |
 | `SECURITY.md` | `[security contact email]` | Director or lab manager |
 | `SUPPORT.md` | `[Slack channel]` | Lab manager |
 | `README.md` (org settings table) | `[a kent.edu lab address]` | Director |

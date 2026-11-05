@@ -32,9 +32,9 @@ and by Kent State University policies, including the
 
 ## Reporting
 
-Report a problem to [conduct contact email]. Reports are read by [conduct contact role] and handled as
-confidentially as the situation allows. If the concern involves that person, contact the lab director,
-Jong-Hoon Kim, associate professor of computer science, at <jkim72@kent.edu>.
+Report a problem to the lab director, Jong-Hoon Kim, associate professor of computer science, at
+<jkim72@kent.edu>. Reports are handled as confidentially as the situation allows. If the concern involves the
+director, contact the chair of the Department of Computer Science or one of the university routes below.
 
 For discrimination, harassment or safety concerns, Kent State University's own reporting routes also apply;
 the lab will point you to the right university office.
@@ -45,4 +45,4 @@ Maintainers may edit or remove comments, commits or issues that break this code,
 anyone who does so repeatedly or seriously. Decisions are explained to the person involved when it is safe to
 do so.
 
-<sub>Last reviewed: Sept. 30, 2026 · Draft until the director approves</sub>
+<sub>Last reviewed: Nov. 5, 2026 · Draft until the director approves</sub>
