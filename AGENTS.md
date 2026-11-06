@@ -48,6 +48,8 @@ Check visibility before linking any other repository:
 | `.github/ISSUE_TEMPLATE/` | Default issue forms (`bug_report.yml`, `feature_request.yml`, `docs_fix.yml`) and `config.yml` |
 | `.github/PULL_REQUEST_TEMPLATE.md` | Default pull request template |
 | `.github/workflows/docs.yml` | Markdown lint and link check for this repository only |
+| `.github/workflows/docs-version-updater.yml` | Reusable workflow for the weekly software-version check that the docs repositories call |
+| `tools/docs-version-updater/` | The checker (`updater.py`, Claude with web search), its `requirements.txt`, `ruff.toml` and `README.md` |
 | `.markdownlint.jsonc` | Markdown lint rules shared by all lab docs repositories |
 | `.lycheeignore` | Sites that block automated link checkers (check those links by hand) |
 | `AGENTS.md`, `CLAUDE.md` | This file; `CLAUDE.md` imports it |
