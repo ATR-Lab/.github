@@ -1,0 +1,91 @@
+name: docs-version-updater
+
+# Reusable workflow behind the weekly software-version check in the lab's docs repositories.
+# Each caller passes the globs of its pages and the Anthropic API key; Claude checks the pages
+# against current sources, and any changes that pass markdownlint and the lab brand check go
+# into one pull request. See tools/docs-version-updater/README.md.
+
+on:
+  workflow_call:
+    inputs:
+      paths:
+        description: Space-separated globs of the pages to check, relative to the repository root
+        type: string
+        required: true
+      max-files:
+        description: Check at most this many pages (0 checks them all)
+        type: number
+        default: 0
+    secrets:
+      ANTHROPIC_API_KEY:
+        required: true
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: docs-version-updater-${{ github.repository }}
+  cancel-in-progress: false
+
+jobs:
+  update:
+    name: Check software versions
+    runs-on: ubuntu-latest
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          path: repo
+      - uses: actions/checkout@v7
+        with:
+          repository: ATR-Lab/.github
+          path: tools
+          sparse-checkout: tools/docs-version-updater
+      - uses: actions/checkout@v7
+        with:
+          repository: ATR-Lab/atr-lab-design-skill
+          path: skill
+          sparse-checkout: atr-lab-design/scripts
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+
+      - name: Install
+        run: pip install -r tools/tools/docs-version-updater/requirements.txt lxml Pillow numpy
+
+      - name: Check the pages with Claude
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          PATHS: ${{ inputs.paths }}
+          MAX_FILES: ${{ inputs.max-files }}
+        run: >-
+          python tools/tools/docs-version-updater/updater.py --root repo --paths "$PATHS"
+          --max-files "$MAX_FILES" --report "$RUNNER_TEMP/report.md"
+
+      # A page that fails either check after the edits goes back to its committed version.
+      - name: Lint the changed pages
+        working-directory: repo
+        run: |
+          reverted=""
+          for page in $(git diff --name-only -- '*.md'); do
+            if ! npx --yes markdownlint-cli2 "$page" \
+              || ! python ../skill/atr-lab-design/scripts/brand_check.py "$page"; then
+              git checkout -- "$page"
+              reverted="$reverted- \`$page\`\n"
+            fi
+          done
+          if [ -n "$reverted" ]; then
+            printf '\n### Reverted\n\nThese pages failed markdownlint or the lab brand check after the edits, so their changes were dropped:\n\n%b' "$reverted" >> "$RUNNER_TEMP/report.md"
+          fi
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Open or update the pull request
+        uses: peter-evans/create-pull-request@v8
+        with:
+          path: repo
+          branch: automation/version-updates
+          delete-branch: true
+          commit-message: Update software facts from the weekly version check
+          title: Weekly software version check
+          body-path: ${{ runner.temp }}/report.md
