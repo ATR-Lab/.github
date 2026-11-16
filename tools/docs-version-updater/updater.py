@@ -18,17 +18,17 @@ from typing import Any
 
 import anthropic
 
-MODEL = 'claude-opus-5-5'
-EFFORT = 'medium'
+MODEL = 'claude-sonnet-5-5'
+EFFORT = 'low'
 MAX_TOKENS = 64000
 MAX_TURNS = 24
 BETAS = ['server-side-fallback-2026-07-01']
 
 # List prices in US dollars, per million tokens and per search, for the report's estimate.
-PRICE_INPUT = 4.00
-PRICE_OUTPUT = 20.00
-PRICE_CACHE_WRITE_1H = 8.00
-PRICE_CACHE_READ = 0.20
+PRICE_INPUT = 2.00
+PRICE_OUTPUT = 10.00
+PRICE_CACHE_WRITE_1H = 4.00
+PRICE_CACHE_READ = 0.10
 PRICE_PER_SEARCH = 0.01
 
 MONTHS = [
