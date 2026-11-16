@@ -1,6 +1,6 @@
 # Docs version updater
 
-Once a week this checks the software facts in the lab's docs repositories (versions, release and end-of-life dates, supported platforms, install and CLI commands) against current primary sources and opens a pull request with any corrections. Claude (`claude-opus-5-5`, effort `medium`) does the checking with web search and web fetch. It edits only the page it was given, cites a source for every change, and leaves lab facts and `[placeholders]` alone.
+Once a week this checks the software facts in the lab's docs repositories (versions, release and end-of-life dates, supported platforms, install and CLI commands) against current primary sources and opens a pull request with any corrections. Claude (`claude-sonnet-5-5`, effort `low`) does the checking with web search and web fetch. It edits only the page it was given, cites a source for every change, and leaves lab facts and `[placeholders]` alone.
 
 ## How it runs
 
